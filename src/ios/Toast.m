@@ -1,6 +1,7 @@
 #import "Toast.h"
 #import "Toast+UIView.h"
 #import <Cordova/CDV.h>
+#import "AppDelegate.h"
 #import <UserNotifications/UserNotifications.h>
 
 @implementation Toast

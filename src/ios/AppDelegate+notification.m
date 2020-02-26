@@ -8,6 +8,7 @@
 
 #import "AppDelegate+notification.h"
 #import <objc/runtime.h>
+//#import <LPMessagingSDK/LPMessagingSDK.h>
 
 static char launchNotificationKey;
 static char coldstartKey;
@@ -70,6 +71,7 @@ NSString *const pushPluginApplicationDidBecomeActiveNotification = @"pushPluginA
 - (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
    // PushPlugin *pushHandler = [self getCommandInstance:@"PushNotification"];
   //  [pushHandler didRegisterForRemoteNotificationsWithDeviceToken:deviceToken];
+  //[[LPMessagingSDK instance] registerPushNotificationsWithToken:deviceToken notificationDelegate:self alternateBundleID:nil authenticationParams:nil];
 }
 
 - (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error {
@@ -79,6 +81,7 @@ NSString *const pushPluginApplicationDidBecomeActiveNotification = @"pushPluginA
 
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler {
     NSLog(@"didReceiveNotification with fetchCompletionHandler");
+  //  [[LPMessagingSDK instance] handlePush:userInfo];
 
 }
 

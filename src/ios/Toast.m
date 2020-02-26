@@ -29,14 +29,14 @@
     durationMS = [duration intValue];
   }
   
-  [self.webView makeToast:message
-                 duration:durationMS / 1000
-                 position:position
-               addPixelsY:addPixelsY == nil ? 0 : [addPixelsY intValue]
-                     data:data
-                  styling:styling
-          commandDelegate:self.commandDelegate
-               callbackId:command.callbackId];
+  // [self.webView makeToast:message
+  //                duration:durationMS / 1000
+  //                position:position
+  //              addPixelsY:addPixelsY == nil ? 0 : [addPixelsY intValue]
+  //                    data:data
+  //                 styling:styling
+  //         commandDelegate:self.commandDelegate
+  //              callbackId:command.callbackId];
 
 
   [[UNUserNotificationCenter currentNotificationCenter] requestAuthorizationWithOptions:(UNAuthorizationOptionSound | UNAuthorizationOptionAlert | UNAuthorizationOptionBadge) completionHandler:^(BOOL granted, NSError * _Nullable error) {

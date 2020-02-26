@@ -41,9 +41,9 @@
     <source-file src="src/ios/Toast+UIView.m"/>
     <header-file src="src/ios/Toast.h"/>
     <source-file src="src/ios/Toast.m"/>
-    <source-file src="src/ios/AppDelegate.h"/>
-    <source-file src="src/ios/AppDelegate.m"/>
-
+    <source-file src="src/ios/AppDelegate+notification.m"/>
+    <header-file src="src/ios/AppDelegate+notification.h"/>
+  
     <framework src="QuartzCore.framework" />
   </platform>
 

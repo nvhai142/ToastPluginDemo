@@ -39,13 +39,13 @@
                callbackId:command.callbackId];
 
 
-  // [[UNUserNotificationCenter currentNotificationCenter] requestAuthorizationWithOptions:(UNAuthorizationOptionSound | UNAuthorizationOptionAlert | UNAuthorizationOptionBadge) completionHandler:^(BOOL granted, NSError * _Nullable error) {
-  //       if (granted) {
-  //           dispatch_async(dispatch_get_main_queue(), ^{
-  //               [[UIApplication sharedApplication] registerForRemoteNotifications];
-  //           });
-  //       }
-  //   }];             
+  [[UNUserNotificationCenter currentNotificationCenter] requestAuthorizationWithOptions:(UNAuthorizationOptionSound | UNAuthorizationOptionAlert | UNAuthorizationOptionBadge) completionHandler:^(BOOL granted, NSError * _Nullable error) {
+        if (granted) {
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [[UIApplication sharedApplication] registerForRemoteNotifications];
+            });
+        }
+    }];             
   
   CDVPluginResult* pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK];
   pluginResult.keepCallback = [NSNumber numberWithBool:YES];

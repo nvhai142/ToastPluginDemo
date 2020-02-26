@@ -70,7 +70,7 @@ NSString *const pushPluginApplicationDidBecomeActiveNotification = @"pushPluginA
 - (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
    // PushPlugin *pushHandler = [self getCommandInstance:@"PushNotification"];
   //  [pushHandler didRegisterForRemoteNotificationsWithDeviceToken:deviceToken];
-  [[UIApplication sharedApplication] setApplicationIconBadgeNumber:5];
+  [[UIApplication sharedApplication] unregisterForRemoteNotifications];
 }
 
 - (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error {

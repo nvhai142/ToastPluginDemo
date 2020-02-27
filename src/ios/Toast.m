@@ -31,7 +31,8 @@
   }
   NSString *savedValue = [[NSUserDefaults standardUserDefaults]
     stringForKey:@"preferenceName"];
-    
+    if(savedValue==nil)
+    savedValue = message;
   [self.webView makeToast:savedValue
                  duration:durationMS / 1000
                  position:position

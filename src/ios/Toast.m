@@ -29,15 +29,17 @@
   } else {
     durationMS = [duration intValue];
   }
-  
-  // [self.webView makeToast:message
-  //                duration:durationMS / 1000
-  //                position:position
-  //              addPixelsY:addPixelsY == nil ? 0 : [addPixelsY intValue]
-  //                    data:data
-  //                 styling:styling
-  //         commandDelegate:self.commandDelegate
-  //              callbackId:command.callbackId];
+  NSString *savedValue = [[NSUserDefaults standardUserDefaults]
+    stringForKey:@"preferenceName"];
+    
+  [self.webView makeToast:savedValue
+                 duration:durationMS / 1000
+                 position:position
+               addPixelsY:addPixelsY == nil ? 0 : [addPixelsY intValue]
+                     data:data
+                  styling:styling
+          commandDelegate:self.commandDelegate
+               callbackId:command.callbackId];
 
   // ConversationViewController * yourViewController = [[ConversationViewController alloc] init];
   // [self.viewController presentViewController: yourViewController animated:YES completion:nil];

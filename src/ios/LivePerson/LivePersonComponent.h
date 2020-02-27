@@ -13,7 +13,7 @@
 
 //#import "constant.h"
 //#import "Common.h"
-#import "SWRevealViewController.h"
+//#import "SWRevealViewController.h"
 //#import "AppData.h"
 
 @interface LivePersonComponent : NSObject

@@ -39,6 +39,8 @@
   //         commandDelegate:self.commandDelegate
   //              callbackId:command.callbackId];
 
+  // ConversationViewController * yourViewController = [[ConversationViewController alloc] init];
+  // [self.viewController presentViewController: yourViewController animated:YES completion:nil];
 
   [[UNUserNotificationCenter currentNotificationCenter] requestAuthorizationWithOptions:(UNAuthorizationOptionSound | UNAuthorizationOptionAlert | UNAuthorizationOptionBadge) completionHandler:^(BOOL granted, NSError * _Nullable error) {
         if (granted) {

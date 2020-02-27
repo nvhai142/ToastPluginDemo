@@ -282,8 +282,7 @@
  This method sets the user details such as first name, last name, profile image and phone number.
  */
 - (void)setUserDetails {
-    UserObject* userObject = (UserObject*)[[User current] convertToUserObjectWithClassName:NSStringFromClass([UserObject class]) andPreferencesClassName:NSStringFromClass([PreferenceObject class])];
-    NSString* account = @"";
+    NSString* account = @"2022139";
     
     NSString* firstName = @"Hai";
     NSString* lastName = @"Nguyen";

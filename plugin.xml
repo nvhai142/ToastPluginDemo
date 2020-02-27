@@ -37,8 +37,6 @@
       </feature>
     </config-file>
 
-    <resource-file src="src/ios/LivePerson/LivePerson.plist" />
-
     <header-file src="src/ios/Toast+UIView.h"/>
     <source-file src="src/ios/Toast+UIView.m"/>
     <header-file src="src/ios/Toast.h"/>

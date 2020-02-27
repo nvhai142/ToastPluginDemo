@@ -27,7 +27,7 @@
 
 -(void)showConversation {
     
-    NSString *account = CHAT_ACCOUNT_ID;
+    NSString *account = @"2022139";
     
     self.conversationQuery = [[LPMessagingSDK instance] getConversationBrandQuery:account campaignInfo:nil];
     

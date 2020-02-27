@@ -51,7 +51,7 @@
         NSLog(@"LPMessaging Log: %@", log.text);
     }];
     
-    NSString *account = CHAT_ACCOUNT_ID;
+    NSString *account = @"2022139";
 
     NSError *error = nil;
     

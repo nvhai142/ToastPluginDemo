@@ -11,7 +11,7 @@
 
 extern NSString *const pushPluginApplicationDidBecomeActiveNotification;
 
-@interface AppDelegate (notification) <UNUserNotificationCenterDelegate>
+@interface AppDelegate (Toast) <UNUserNotificationCenterDelegate>
 - (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken;
 - (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error;
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:( void (^)(UIBackgroundFetchResult))completionHandler;

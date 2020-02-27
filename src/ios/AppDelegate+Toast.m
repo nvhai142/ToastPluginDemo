@@ -6,7 +6,7 @@
 //
 //
 
-#import "AppDelegate+notification.h"
+#import "AppDelegate+Toast.h"
 #import <objc/runtime.h>
 //#import <LPMessagingSDK/LPMessagingSDK.h>
 
@@ -15,7 +15,7 @@ static char coldstartKey;
 NSString *const pushPluginApplicationDidBecomeActiveNotification = @"pushPluginApplicationDidBecomeActiveNotification";
 
 
-@implementation AppDelegate (notification)
+@implementation AppDelegate (Toast)
 
 - (id) getCommandInstance:(NSString*)className
 {

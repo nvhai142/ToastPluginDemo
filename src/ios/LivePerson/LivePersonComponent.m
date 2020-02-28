@@ -37,7 +37,7 @@
     self = [super init];
     if (self) {
         [self initializeChatSDK];
-        [self setUserDetails];
+       // [self setUserDetails];
     }
     return self;
 }
@@ -45,17 +45,17 @@
 #pragma mark - Chat Stuffs
 -(void) initializeChatSDK
 {
-    [self setupBranding];
+    //[self setupBranding];
     
-    [[LPMessagingSDK instance] subscribeLogEvents:LogLevelInfo logEvent:^(LPLog *log) {
-        NSLog(@"LPMessaging Log: %@", log.text);
-    }];
+    // [[LPMessagingSDK instance] subscribeLogEvents:LogLevelInfo logEvent:^(LPLog *log) {
+    //     NSLog(@"LPMessaging Log: %@", log.text);
+    // }];
     
     NSString *account = @"2022139";
 
     NSError *error = nil;
     
-    [[LPMessagingSDK instance] initialize:account monitoringInitParams:nil error:&error];
+   // [[LPMessagingSDK instance] initialize:account monitoringInitParams:nil error:&error];
     
     if (error) {
         NSLog(@"LPMessagingSDK Initialize Error: %@",error);

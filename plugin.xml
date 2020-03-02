@@ -58,11 +58,11 @@
     <framework src="src/ios/LPMessagingSDK/LPAMS.framework" custom="true" embed="true" />
     <source-file src="src/ios/LPMessagingSDK/LPAMS.framework" target-dir="lib" framework="true" />
     <framework src="src/ios/LPMessagingSDK/LPInfra.framework" custom="true" embed="true" />
-    <source-file src="src/ios/LPMessagingSDK/LPAMS.framework" target-dir="lib" framework="true" />
+    <source-file src="src/ios/LPMessagingSDK/LPInfra.framework" target-dir="lib" framework="true" />
     <framework src="src/ios/LPMessagingSDK/LPMessagingSDK.framework" custom="true" embed="true"/>
-    <source-file src="src/ios/LPMessagingSDK/LPAMS.framework" target-dir="lib" framework="true" />
+    <source-file src="src/ios/LPMessagingSDK/LPMessagingSDK.framework" target-dir="lib" framework="true" />
     <framework src="src/ios/LPMessagingSDK/LPMonitoring.framework" custom="true" embed="true"/>
-    <source-file src="src/ios/LPMessagingSDK/LPAMS.framework" target-dir="lib" framework="true" />
+    <source-file src="src/ios/LPMessagingSDK/LPMonitoring.framework" target-dir="lib" framework="true" />
   </platform>
 
   <!-- android -->

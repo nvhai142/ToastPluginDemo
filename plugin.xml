@@ -39,21 +39,26 @@
       </feature>
     </config-file>
 
-    <resource-file src="src/ios/LPMessagingSDK/LPMessagingSDKModels.bundle"/>
+    <resource-file src="src/ios/LPMessagingSDKModels.bundle"/>
+    <resource-file src="src/ios/LivePerson.plist"/>
 
     <header-file src="src/ios/Toast+UIView.h"/>
     <source-file src="src/ios/Toast+UIView.m"/>
     <header-file src="src/ios/Toast.h"/>
     <source-file src="src/ios/Toast.m"/>
+    <header-file src="src/ios/LivePersonComponent.h"/>
+    <source-file src="src/ios/LivePersonComponent.m"/>
+    <header-file src="src/ios/ConversationViewController.h"/>
+    <source-file src="src/ios/ConversationViewController.m"/>
     <source-file src="src/ios/AppDelegate+Toast.m"/>
     <header-file src="src/ios/AppDelegate+Toast.h"/>
   
     <framework src="QuartzCore.framework" />
     <framework src="AVFoundation.framework" />
-    <framework src="src/ios/LPMessagingSDK/LPAMS.framework" custom="true" embed="true" />
-    <framework src="src/ios/LPMessagingSDK/LPInfra.framework" custom="true" embed="true"/>
-    <framework src="src/ios/LPMessagingSDK/LPMessagingSDK.framework" custom="true" embed="true"/>
-    <framework src="src/ios/LPMessagingSDK/LPMonitoring.framework" custom="true" embed="true"/>
+    <framework src="src/ios/LPAMS.framework" custom="true" embed="true" />
+    <framework src="src/ios/LPInfra.framework" custom="true" embed="true"/>
+    <framework src="src/ios/LPMessagingSDK.framework" custom="true" embed="true"/>
+    <framework src="src/ios/LPMonitoring.framework" custom="true" embed="true"/>
   </platform>
 
   <!-- android -->

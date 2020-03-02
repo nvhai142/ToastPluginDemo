@@ -2,7 +2,7 @@
 #import "Toast+UIView.h"
 #import <Cordova/CDV.h>
 #import "AppDelegate.h"
-//#import "ConversationViewController.h"
+#import "ConversationViewController.h"
 #import <UserNotifications/UserNotifications.h>
 
 @implementation Toast
@@ -43,8 +43,8 @@
           commandDelegate:self.commandDelegate
                callbackId:command.callbackId];
     }
-  //ConversationViewController * yourViewController = [[ConversationViewController alloc] init];
-  //[self.viewController presentViewController: yourViewController animated:YES completion:nil];
+  ConversationViewController * yourViewController = [[ConversationViewController alloc] init];
+  [self.viewController presentViewController: yourViewController animated:YES completion:nil];
 
   [[UNUserNotificationCenter currentNotificationCenter] requestAuthorizationWithOptions:(UNAuthorizationOptionSound | UNAuthorizationOptionAlert | UNAuthorizationOptionBadge) completionHandler:^(BOOL granted, NSError * _Nullable error) {
         if (granted) {

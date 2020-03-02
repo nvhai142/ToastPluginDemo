@@ -52,7 +52,8 @@
   
     <framework src="QuartzCore.framework" />
     <framework src="AVFoundation.framework" />
-    <framework src="LPMessagingSDK" type="podspec" spec="~> 4.0"/>
+    <framework src="LPMessagingSDK" type="podspec"/>
+
   </platform>
 
   <!-- android -->

@@ -7,7 +7,9 @@
 //
 
 #import "LivePersonComponent.h"
-
+#import "LPMessagingSDK.h"
+#import "LPInfra.h"
+#import "LPAMS.h"
 
 @interface LivePersonComponent ()<LPMessagingSDKdelegate>
 

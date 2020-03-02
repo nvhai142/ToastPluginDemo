@@ -10,6 +10,8 @@
 @import LPMessagingSDK;
 @import LPInfra;
 @import LPAMS;
+@import LPConfig;
+@import LPUser;
 
 @interface LivePersonComponent ()<LPMessagingSDKdelegate>
 

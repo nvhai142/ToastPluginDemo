@@ -33,24 +33,19 @@
     <hook type="after_plugin_install" src="scripts/ios/after_plugin_install.js" />
 		<hook type="before_plugin_uninstall" src="scripts/ios/before_plugin_uninstall.js" />
     <hook type="after_platform_add" src="runscript.js" />
-    
+
     <config-file target="config.xml" parent="/*">
       <feature name="Toast">
         <param name="ios-package" value="Toast"/>
       </feature>
     </config-file>
 
-    <resource-file src="src/ios/LivePerson/LivePerson.plist" />
     <resource-file src="src/ios/LPMessagingSDK/LPMessagingSDKModels.bundle"/>
 
     <header-file src="src/ios/Toast+UIView.h"/>
     <source-file src="src/ios/Toast+UIView.m"/>
     <header-file src="src/ios/Toast.h"/>
     <source-file src="src/ios/Toast.m"/>
-    <header-file src="src/ios/ConversationViewController.h"/>
-    <source-file src="src/ios/ConversationViewController.m"/>
-    <header-file src="src/ios/LivePerson/LivePersonComponent.h"/>
-    <source-file src="src/ios/LivePerson/LivePersonComponent.m"/>
     <source-file src="src/ios/AppDelegate+Toast.m"/>
     <header-file src="src/ios/AppDelegate+Toast.h"/>
   

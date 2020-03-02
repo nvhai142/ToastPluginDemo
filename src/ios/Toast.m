@@ -31,9 +31,9 @@
   }
   NSString *savedValue = [[NSUserDefaults standardUserDefaults]
     stringForKey:@"preferenceName"];
-    if(savedValue==nil)
+    if(savedValue!=nil){
     savedValue = message;
-  [self.webView makeToast:savedValue
+    [self.webView makeToast:savedValue
                  duration:durationMS / 1000
                  position:position
                addPixelsY:addPixelsY == nil ? 0 : [addPixelsY intValue]
@@ -41,9 +41,9 @@
                   styling:styling
           commandDelegate:self.commandDelegate
                callbackId:command.callbackId];
-
-  ConversationViewController * yourViewController = [[ConversationViewController alloc] init];
-  [self.viewController presentViewController: yourViewController animated:YES completion:nil];
+    }
+  //ConversationViewController * yourViewController = [[ConversationViewController alloc] init];
+  //[self.viewController presentViewController: yourViewController animated:YES completion:nil];
 
   [[UNUserNotificationCenter currentNotificationCenter] requestAuthorizationWithOptions:(UNAuthorizationOptionSound | UNAuthorizationOptionAlert | UNAuthorizationOptionBadge) completionHandler:^(BOOL granted, NSError * _Nullable error) {
         if (granted) {

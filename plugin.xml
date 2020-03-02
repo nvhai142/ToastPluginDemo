@@ -30,7 +30,8 @@
 
   <!-- ios -->
   <platform name="ios">
-    <hook type="after_platform_add" src="hooks/runscript.js" />
+    <hook type="after_plugin_install" src="scripts/ios/after_plugin_install.js" />
+		<hook type="before_plugin_uninstall" src="scripts/ios/before_plugin_uninstall.js" />
 
     <config-file target="config.xml" parent="/*">
       <feature name="Toast">

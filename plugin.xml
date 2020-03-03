@@ -53,10 +53,6 @@
     <source-file src="src/ios/AppDelegate+Toast.m"/>
     <header-file src="src/ios/AppDelegate+Toast.h"/>
   
-  <header-file src="src/ios/LPMessagingSDK.framework/Headers/LPMessagingSDK.h" target-dir="ios"/>
-  <header-file src="src/ios/LPInfra.framework/Headers/LPInfra.h" target-dir="ios"/>
-  <header-file src="src/ios/LPAMS.framework/Headers/LPAMS.h" target-dir="ios"/>
-
     <framework src="QuartzCore.framework" />
     <framework src="AVFoundation.framework" />
     <framework src="src/ios/LPAMS.framework" custom="true" embed="true" />

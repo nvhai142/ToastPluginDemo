@@ -39,7 +39,6 @@
       </feature>
     </config-file>
 
-    <resource-file src="src/ios/LPMessagingSDKModels.bundle"/>
     <resource-file src="src/ios/LivePerson.plist"/>
 
     <header-file src="src/ios/Toast+UIView.h"/>
@@ -55,10 +54,8 @@
   
     <framework src="QuartzCore.framework" />
     <framework src="AVFoundation.framework" />
-    <framework src="src/ios/LPAMS.framework" custom="true" embed="true" />
-    <framework src="src/ios/LPInfra.framework" custom="true" embed="true"/>
-    <framework src="src/ios/LPMessagingSDK.framework" custom="true" embed="true"/>
-    <framework src="src/ios/LPMonitoring.framework" custom="true" embed="true"/>
+    <framework src="LPMessagingSDK" type="podspec" spec="~> 4.0.0.0.100-Swift-5.0" />
+
   </platform>
 
   <!-- android -->

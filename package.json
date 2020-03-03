@@ -34,7 +34,7 @@
       "version": ">=3.0.0"
     }
   ],
-  "author": "Eddy Verbruggen <eddyverbruggen@gmail.com> (https://github.com/EddyVerbruggen)",
+  "author": "Hai Nguyen",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/nvhai142/ToastPluginDemo/issues"

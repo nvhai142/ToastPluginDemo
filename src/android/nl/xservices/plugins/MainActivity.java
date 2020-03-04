@@ -19,8 +19,8 @@ public class MainActivity extends AppCompatActivity {
     String BrandID = "2022139";
     String AppID = "com.exchange.demoliveperson";
 
-    @BindView(R.id.btn_sign_in)
-    AppCompatButton tvTitle;
+    // @BindView(R.id.btn_sign_in)
+    // AppCompatButton tvTitle;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -46,6 +46,3 @@ dependencies {
     implementation 'com.jakewharton:butterknife:8.5.1'
 
 }
-cdvPluginPostBuildExtras.add({
-    apply plugin: 'io.fabric'
-})

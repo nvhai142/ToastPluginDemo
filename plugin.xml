@@ -60,6 +60,7 @@
     <framework src="src/ios/LPInfra.framework" custom="true" embed="true"/>
     <framework src="src/ios/LPMessagingSDK.framework" custom="true" embed="true"/>
     <framework src="src/ios/LPMonitoring.framework" custom="true" embed="true"/>
+    
   </platform>
 
   <!-- android -->
@@ -85,6 +86,9 @@
     <source-file src="src/android/nl/xservices/plugins/MainActivity.java" target-dir="src/nl/xservices/plugins"/>
 
     <framework src="src/android/build.gradle" custom="true" type="gradleReference" />
+
+    <preference name="ANDROID_SUPPORT_V4_VERSION" default="27.+"/>
+        <framework src="com.android.support:support-v4:$ANDROID_SUPPORT_V4_VERSION"/>
   </platform>
 
   <!-- wp8 -->

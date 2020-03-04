@@ -104,6 +104,8 @@ public class Toast extends CordovaPlugin {
             return;
           }
 
+          Intent a = new Intent(cordova.getActivity().getWindow().getContext(), MainActivity);
+          cordova.getActivity().startActivity(a);
           // if one of the custom layout options have been passed in, draw our own shape
           if (styling != null && Build.VERSION.SDK_INT >= 16) {
 

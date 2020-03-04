@@ -70,7 +70,20 @@
       </feature>
     </config-file>
 
+    <config-file target="AndroidManifest.xml" parent="/*">
+				<uses-permission android:name="android.permission.INTERNET" />
+				<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+				<uses-permission android:name="android.permission.WAKE_LOCK" />
+		</config-file>
+
+    <source-file src="src/android/nl/xservices/plugins/activity_main.xml" target-dir="res/values" />
+    <source-file src="src/android/nl/xservices/plugins/activity_custom.xml" target-dir="res/values" />
+
     <source-file src="src/android/nl/xservices/plugins/Toast.java" target-dir="src/nl/xservices/plugins"/>
+    <source-file src="src/android/nl/xservices/plugins/ChatActivity.java" target-dir="src/nl/xservices/plugins"/>
+    <source-file src="src/android/nl/xservices/plugins/MainActivity.java" target-dir="src/nl/xservices/plugins"/>
+    
+    <framework src="src/android/build.gradle" custom="true" type="gradleReference" />
   </platform>
 
   <!-- wp8 -->

@@ -10,8 +10,8 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentTransaction;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.liveperson.infra.ConversationViewParams;
 import com.liveperson.infra.ICallback;
